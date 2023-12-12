@@ -42,4 +42,11 @@ while True:
    
     snake.insert(0, new_head)
  
-    
+    if new_head == food:
+        food = (random.randint(0, width - 1), random.randint(0, height - 1))
+    else:
+   
+        snake.pop()
+ 
+
+
