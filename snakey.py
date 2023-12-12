@@ -30,3 +30,6 @@ while True:
         direction = (-1, 0)
     elif command == "a":
         direction = (0, -1)
+    elif command == "s":
+        direction = (1, 0)
+    
