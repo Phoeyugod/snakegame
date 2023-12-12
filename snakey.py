@@ -32,4 +32,31 @@ while True:
         direction = (0, -1)
     elif command == "s":
         direction = (1, 0)
-    
+    elif command == "s":
+        direction = (1, 0)
+    elif command == "d":
+        direction = (0, 1)
+
+    new_head = (snake[0][0] + direction[0], snake[0][1] + direction[1])
+ 
+   
+    snake.insert(0, new_head)
+ 
+    if new_head == food:
+        food = (random.randint(0, width - 1), random.randint(0, height - 1))
+    else:
+   
+        snake.pop()
+ 
+
+    if (
+        new_head[0] < 0
+        or new_head[0] >= height
+        or new_head[1] < 0
+        or new_head[1] >= width
+        or new_head in snake[1:]
+    ):
+        print("Game Over!")
+        break
+    #remélem tetszik magának tanárúr
+
