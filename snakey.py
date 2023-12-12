@@ -56,5 +56,6 @@ while True:
         or new_head[1] >= width
         or new_head in snake[1:]
     ):
-
+        print("Game Over!")
+        break
 
