@@ -32,4 +32,9 @@ while True:
         direction = (0, -1)
     elif command == "s":
         direction = (1, 0)
-    
+    elif command == "s":
+        direction = (1, 0)
+    elif command == "d":
+        direction = (0, 1)
+
+   
