@@ -49,4 +49,12 @@ while True:
         snake.pop()
  
 
+    if (
+        new_head[0] < 0
+        or new_head[0] >= height
+        or new_head[1] < 0
+        or new_head[1] >= width
+        or new_head in snake[1:]
+    ):
+
 
