@@ -23,4 +23,10 @@ while True:
         print()
  
 
-    
+    command = input("Enter a command (w/a/s/d): ").lower()
+ 
+
+    if command == "w":
+        direction = (-1, 0)
+    elif command == "a":
+        direction = (0, -1)
